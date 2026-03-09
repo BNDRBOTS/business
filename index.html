@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<title>BNDR LLC — Brand Design + Web Agency</title>
+
+<meta name="description" content="BNDR LLC — Brand design agency. Unlimited design, websites, branding for $3,995/month. Max 3 clients. Direct access. Zero gatekeeping.">
+<meta name="theme-color" content="#000000">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BNDR LLC",
+  "description": "Brand design and web development agency — unlimited design subscription",
+  "telephone": "+17179197731",
+  "email": "bndr.labs@gmail.com"
+}
+</script>
+
+<script>
+(function() {
+    const saved = localStorage.getItem('bndr-theme');
+    const sys   = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', saved || sys);
+})();
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
